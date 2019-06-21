@@ -27,7 +27,7 @@ if sys.platform == 'win32':
 
 __author__ = 'ping'
 __url__ = 'https://github.com/ping/odmpy/'
-__version__ = '0.1.0'   # also update odmpy/odm.py
+__version__ = '0.2.0'   # also update odmpy/odm.py
 
 
 __long_description__ = '''
@@ -46,18 +46,17 @@ setup(
             'odmpy = odmpy.__main__:main',
         ]
     },
-    install_requires=['requests', 'clint', 'mutagen'],
+    install_requires=['requests', 'clint', 'eyed3'],
     include_package_data=True,
     platforms='any',
     long_description=__long_description__,
     keywords='overdrive audiobook',
-    description='A console downloader for OverDrive audiobook loan.',
+    description='A console downloader for an OverDrive audiobook loan.',
     classifiers=[
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Environment :: Console',
         'Intended Audience :: End Users/Desktop',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ]
